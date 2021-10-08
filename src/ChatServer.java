@@ -14,7 +14,6 @@ public class ChatServer {
     private static final ArrayList<ClientConnectionData> clientArrayList = new ArrayList<>();
     //Make this a thread-safe collection
     private static final List<ClientConnectionData> clientList = Collections.synchronizedList(clientArrayList);
-
     public static void main(String[] args) throws Exception {
         ExecutorService pool = Executors.newFixedThreadPool(100);
 

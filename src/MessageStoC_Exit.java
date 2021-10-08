@@ -1,4 +1,3 @@
-
 public class MessageStoC_Exit extends Message {
     public String userName;
 

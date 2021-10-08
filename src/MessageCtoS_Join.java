@@ -1,4 +1,3 @@
-
 public class MessageCtoS_Join extends Message {
     public String userName;
 

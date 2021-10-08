@@ -1,4 +1,3 @@
-
 public class MessageStoC_Chat extends Message {
     public String userName;
     public String msg;

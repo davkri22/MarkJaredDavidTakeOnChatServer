@@ -1,4 +1,3 @@
-
 public class MessageCtoS_Chat extends Message {
     public String msg;
 

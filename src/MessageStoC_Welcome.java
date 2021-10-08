@@ -1,4 +1,3 @@
-
 public class MessageStoC_Welcome extends Message {
     public String userName;
 
