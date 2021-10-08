@@ -3,11 +3,10 @@
 # It will also log the crashes and restarts
 
 
-# To be able to execute this, you may need to set the executable permissions with:
+# set executable permissions with:
 #   chmod +x chatServerRestartScript.sh
-# Then execute with
-#   ./restartChatServer.sh 
-# To run on a separate process that won't hang up after ssh session ends
+
+# execute with:
 #   nohup ./restartChatServer.sh &
 
 while true 
