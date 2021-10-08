@@ -1,4 +1,3 @@
-
 import java.io.ObjectInputStream;
 
 public class ChatClientSocketListener implements Runnable {

@@ -1,11 +1,11 @@
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
-import java.net.Socket;
 import java.net.SocketException;
 import java.util.List;
+import java.net.Socket;
 
-public class ChatServerSocketListener implements Runnable {
+public class ChatServerSocketListener  implements Runnable {
     private Socket socket;
 
     private ClientConnectionData client;
@@ -49,7 +49,7 @@ public class ChatServerSocketListener implements Runnable {
         } catch (Exception ex) {
             System.out.println("broadcast caught exception: " + ex);
             ex.printStackTrace();
-        }
+        }        
     }
 
     @Override
@@ -61,7 +61,7 @@ public class ChatServerSocketListener implements Runnable {
             MessageCtoS_Join joinMessage = (MessageCtoS_Join)in.readObject();
             client.setUserName(joinMessage.userName);
             broadcast(new MessageStoC_Welcome(joinMessage.userName), client);
-
+            
             while (true) {
                 Message msg = (Message) in.readObject();
                 if (msg instanceof MessageCtoS_Quit) {
@@ -76,15 +76,15 @@ public class ChatServerSocketListener implements Runnable {
             }
         } catch (Exception ex) {
             if (ex instanceof SocketException) {
-                System.out.println("Caught socket ex for " +
-                        client.getName());
+                System.out.println("Caught socket ex for " + 
+                    client.getName());
             } else {
                 System.out.println(ex);
                 ex.printStackTrace();
             }
         } finally {
             //Remove client from clientList
-            clientList.remove(client);
+            clientList.remove(client); 
 
             // Notify everyone that the user left.
             broadcast(new MessageStoC_Exit(client.getUserName()), client);
@@ -94,5 +94,5 @@ public class ChatServerSocketListener implements Runnable {
             } catch (IOException ex) {}
         }
     }
-
+        
 }
