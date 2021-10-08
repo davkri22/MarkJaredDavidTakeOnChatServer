@@ -2,3 +2,13 @@ Server (re)started at: Fri Oct  8 18:18:30 UTC 2021
 Chat Server started.
 Local IP: 172.31.92.127
 Local Port: 54323
+Connected to /127.0.0.1:42472 on local port 54323
+added client localhost
+broadcasting: Welcome: user
+Chat received from user - broadcasting
+broadcasting: Chat Message from user: hi
+Chat received from user - broadcasting
+broadcasting: Chat Message from user: quit
+Chat received from user - broadcasting
+broadcasting: Chat Message from user: exit
+broadcasting: Exiting: user
