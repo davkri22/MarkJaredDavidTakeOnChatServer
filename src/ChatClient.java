@@ -1,22 +1,24 @@
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.net.Socket;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class ChatClient {
     private Socket socket;
     private ObjectOutputStream socketOut;
     private ObjectInputStream socketIn;
+    private ArrayList<String> blocked = new ArrayList<>();
 
     public ChatClient(String ip, int port) throws Exception {
         socket = new Socket(ip, port);
         socketOut = new ObjectOutputStream(socket.getOutputStream());
         socketIn = new ObjectInputStream(socket.getInputStream());
     }
-
+ 
     // start a thread to listen for messages from the server
     private void startListener() {
-        new Thread(new ChatClientSocketListener(socketIn)).start();
+        new Thread(new ChatClientSocketListener(socketIn, blocked)).start();
     }
 
     private void sendMessage(Message m) throws Exception {
@@ -32,6 +34,12 @@ public class ChatClient {
 
         String line = in.nextLine().trim();
         while (!line.toLowerCase().startsWith("/quit")) {
+            if (line.startsWith("/block ")){
+                blocked.add(line.substring(7));
+                System.out.println("User "+ line.substring(7) + " blocked");
+                line = in.nextLine().trim();
+                continue;
+            }
             sendMessage(new MessageCtoS_Chat(line));
             line = in.nextLine().trim();
         }

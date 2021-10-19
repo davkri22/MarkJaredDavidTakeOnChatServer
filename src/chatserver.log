@@ -12,3 +12,509 @@ broadcasting: Chat Message from user: quit
 Chat received from user - broadcasting
 broadcasting: Chat Message from user: exit
 broadcasting: Exiting: user
+Server (re)started at: Mon Oct 18 15:40:35 UTC 2021
+Exception in thread "main" java.net.BindException: Address already in use (Bind failed)
+	at java.base/java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:436)
+	at java.base/java.net.ServerSocket.bind(ServerSocket.java:395)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:257)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:149)
+	at ChatServer.main(ChatServer.java:20)
+Server crashed at: Mon Oct 18 15:40:36 UTC 2021
+Server (re)started at: Mon Oct 18 15:40:46 UTC 2021
+Exception in thread "main" java.net.BindException: Address already in use (Bind failed)
+	at java.base/java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:436)
+	at java.base/java.net.ServerSocket.bind(ServerSocket.java:395)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:257)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:149)
+	at ChatServer.main(ChatServer.java:20)
+Server crashed at: Mon Oct 18 15:40:46 UTC 2021
+Server (re)started at: Mon Oct 18 15:40:56 UTC 2021
+Exception in thread "main" java.net.BindException: Address already in use (Bind failed)
+	at java.base/java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:436)
+	at java.base/java.net.ServerSocket.bind(ServerSocket.java:395)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:257)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:149)
+	at ChatServer.main(ChatServer.java:20)
+Server crashed at: Mon Oct 18 15:40:56 UTC 2021
+Server (re)started at: Mon Oct 18 15:41:06 UTC 2021
+Exception in thread "main" java.net.BindException: Address already in use (Bind failed)
+	at java.base/java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:436)
+	at java.base/java.net.ServerSocket.bind(ServerSocket.java:395)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:257)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:149)
+	at ChatServer.main(ChatServer.java:20)
+Server crashed at: Mon Oct 18 15:41:06 UTC 2021
+Server (re)started at: Mon Oct 18 15:41:16 UTC 2021
+Exception in thread "main" java.net.BindException: Address already in use (Bind failed)
+	at java.base/java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:436)
+	at java.base/java.net.ServerSocket.bind(ServerSocket.java:395)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:257)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:149)
+	at ChatServer.main(ChatServer.java:20)
+Server crashed at: Mon Oct 18 15:41:16 UTC 2021
+Server (re)started at: Mon Oct 18 15:41:26 UTC 2021
+Exception in thread "main" java.net.BindException: Address already in use (Bind failed)
+	at java.base/java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:436)
+	at java.base/java.net.ServerSocket.bind(ServerSocket.java:395)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:257)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:149)
+	at ChatServer.main(ChatServer.java:20)
+Server crashed at: Mon Oct 18 15:41:26 UTC 2021
+Server (re)started at: Mon Oct 18 15:41:36 UTC 2021
+Exception in thread "main" java.net.BindException: Address already in use (Bind failed)
+	at java.base/java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:436)
+	at java.base/java.net.ServerSocket.bind(ServerSocket.java:395)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:257)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:149)
+	at ChatServer.main(ChatServer.java:20)
+Server crashed at: Mon Oct 18 15:41:36 UTC 2021
+Server (re)started at: Mon Oct 18 15:41:46 UTC 2021
+Exception in thread "main" java.net.BindException: Address already in use (Bind failed)
+	at java.base/java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:436)
+	at java.base/java.net.ServerSocket.bind(ServerSocket.java:395)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:257)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:149)
+	at ChatServer.main(ChatServer.java:20)
+Server crashed at: Mon Oct 18 15:41:47 UTC 2021
+Server (re)started at: Mon Oct 18 15:41:57 UTC 2021
+Exception in thread "main" java.net.BindException: Address already in use (Bind failed)
+	at java.base/java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:436)
+	at java.base/java.net.ServerSocket.bind(ServerSocket.java:395)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:257)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:149)
+	at ChatServer.main(ChatServer.java:20)
+Server crashed at: Mon Oct 18 15:41:57 UTC 2021
+Server (re)started at: Mon Oct 18 15:42:07 UTC 2021
+Exception in thread "main" java.net.BindException: Address already in use (Bind failed)
+	at java.base/java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:436)
+	at java.base/java.net.ServerSocket.bind(ServerSocket.java:395)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:257)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:149)
+	at ChatServer.main(ChatServer.java:20)
+Server crashed at: Mon Oct 18 15:42:07 UTC 2021
+Server (re)started at: Mon Oct 18 15:42:17 UTC 2021
+Exception in thread "main" java.net.BindException: Address already in use (Bind failed)
+	at java.base/java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:436)
+	at java.base/java.net.ServerSocket.bind(ServerSocket.java:395)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:257)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:149)
+	at ChatServer.main(ChatServer.java:20)
+Server crashed at: Mon Oct 18 15:42:17 UTC 2021
+Server (re)started at: Mon Oct 18 15:42:27 UTC 2021
+Exception in thread "main" java.net.BindException: Address already in use (Bind failed)
+	at java.base/java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:436)
+	at java.base/java.net.ServerSocket.bind(ServerSocket.java:395)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:257)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:149)
+	at ChatServer.main(ChatServer.java:20)
+Server crashed at: Mon Oct 18 15:42:27 UTC 2021
+Server (re)started at: Mon Oct 18 15:42:37 UTC 2021
+Exception in thread "main" java.net.BindException: Address already in use (Bind failed)
+	at java.base/java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:436)
+	at java.base/java.net.ServerSocket.bind(ServerSocket.java:395)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:257)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:149)
+	at ChatServer.main(ChatServer.java:20)
+Server crashed at: Mon Oct 18 15:42:37 UTC 2021
+Server (re)started at: Mon Oct 18 15:42:47 UTC 2021
+Exception in thread "main" java.net.BindException: Address already in use (Bind failed)
+	at java.base/java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:436)
+	at java.base/java.net.ServerSocket.bind(ServerSocket.java:395)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:257)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:149)
+	at ChatServer.main(ChatServer.java:20)
+Server crashed at: Mon Oct 18 15:42:47 UTC 2021
+Server (re)started at: Mon Oct 18 15:42:57 UTC 2021
+Exception in thread "main" java.net.BindException: Address already in use (Bind failed)
+	at java.base/java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:436)
+	at java.base/java.net.ServerSocket.bind(ServerSocket.java:395)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:257)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:149)
+	at ChatServer.main(ChatServer.java:20)
+Server crashed at: Mon Oct 18 15:42:58 UTC 2021
+Server (re)started at: Mon Oct 18 15:43:08 UTC 2021
+Exception in thread "main" java.net.BindException: Address already in use (Bind failed)
+	at java.base/java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:436)
+	at java.base/java.net.ServerSocket.bind(ServerSocket.java:395)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:257)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:149)
+	at ChatServer.main(ChatServer.java:20)
+Server crashed at: Mon Oct 18 15:43:08 UTC 2021
+Server (re)started at: Mon Oct 18 15:43:18 UTC 2021
+Exception in thread "main" java.net.BindException: Address already in use (Bind failed)
+	at java.base/java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:436)
+	at java.base/java.net.ServerSocket.bind(ServerSocket.java:395)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:257)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:149)
+	at ChatServer.main(ChatServer.java:20)
+Server crashed at: Mon Oct 18 15:43:18 UTC 2021
+Server (re)started at: Mon Oct 18 15:43:28 UTC 2021
+Exception in thread "main" java.net.BindException: Address already in use (Bind failed)
+	at java.base/java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:436)
+	at java.base/java.net.ServerSocket.bind(ServerSocket.java:395)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:257)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:149)
+	at ChatServer.main(ChatServer.java:20)
+Server crashed at: Mon Oct 18 15:43:28 UTC 2021
+Server (re)started at: Mon Oct 18 15:43:31 UTC 2021
+Exception in thread "main" java.net.BindException: Address already in use (Bind failed)
+	at java.base/java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:436)
+	at java.base/java.net.ServerSocket.bind(ServerSocket.java:395)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:257)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:149)
+	at ChatServer.main(ChatServer.java:20)
+Server crashed at: Mon Oct 18 15:43:31 UTC 2021
+Server (re)started at: Mon Oct 18 15:43:38 UTC 2021
+Exception in thread "main" java.net.BindException: Address already in use (Bind failed)
+	at java.base/java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:436)
+	at java.base/java.net.ServerSocket.bind(ServerSocket.java:395)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:257)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:149)
+	at ChatServer.main(ChatServer.java:20)
+Server crashed at: Mon Oct 18 15:43:38 UTC 2021
+Server (re)started at: Mon Oct 18 15:43:42 UTC 2021
+Exception in thread "main" java.net.BindException: Address already in use (Bind failed)
+	at java.base/java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:436)
+	at java.base/java.net.ServerSocket.bind(ServerSocket.java:395)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:257)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:149)
+	at ChatServer.main(ChatServer.java:20)
+Server crashed at: Mon Oct 18 15:43:42 UTC 2021
+Server (re)started at: Mon Oct 18 15:43:48 UTC 2021
+Exception in thread "main" java.net.BindException: Address already in use (Bind failed)
+	at java.base/java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:436)
+	at java.base/java.net.ServerSocket.bind(ServerSocket.java:395)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:257)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:149)
+	at ChatServer.main(ChatServer.java:20)
+Server crashed at: Mon Oct 18 15:43:48 UTC 2021
+Server (re)started at: Mon Oct 18 15:43:52 UTC 2021
+Exception in thread "main" java.net.BindException: Address already in use (Bind failed)
+	at java.base/java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:436)
+	at java.base/java.net.ServerSocket.bind(ServerSocket.java:395)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:257)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:149)
+	at ChatServer.main(ChatServer.java:20)
+Server crashed at: Mon Oct 18 15:43:52 UTC 2021
+Server (re)started at: Mon Oct 18 15:43:58 UTC 2021
+Chat Server started.
+Local IP: 172.31.92.127
+Local Port: 54323
+Server (re)started at: Mon Oct 18 15:44:02 UTC 2021
+Exception in thread "main" java.net.BindException: Address already in use (Bind failed)
+	at java.base/java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:436)
+	at java.base/java.net.ServerSocket.bind(ServerSocket.java:395)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:257)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:149)
+	at ChatServer.main(ChatServer.java:20)
+Server crashed at: Mon Oct 18 15:44:02 UTC 2021
+Server (re)started at: Mon Oct 18 15:44:34 UTC 2021
+Exception in thread "main" java.net.BindException: Address already in use (Bind failed)
+	at java.base/java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:436)
+	at java.base/java.net.ServerSocket.bind(ServerSocket.java:395)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:257)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:149)
+	at ChatServer.main(ChatServer.java:20)
+Server crashed at: Mon Oct 18 15:44:35 UTC 2021
+Server (re)started at: Mon Oct 18 15:44:45 UTC 2021
+Exception in thread "main" java.net.BindException: Address already in use (Bind failed)
+	at java.base/java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:436)
+	at java.base/java.net.ServerSocket.bind(ServerSocket.java:395)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:257)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:149)
+	at ChatServer.main(ChatServer.java:20)
+Server crashed at: Mon Oct 18 15:44:45 UTC 2021
+Connected to /168.229.254.25:58844 on local port 54323
+added client 168.229.254.25
+Server (re)started at: Mon Oct 18 15:44:55 UTC 2021
+Exception in thread "main" java.net.BindException: Address already in use (Bind failed)
+	at java.base/java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:436)
+	at java.base/java.net.ServerSocket.bind(ServerSocket.java:395)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:257)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:149)
+	at ChatServer.main(ChatServer.java:20)
+Server crashed at: Mon Oct 18 15:44:55 UTC 2021
+broadcasting: Welcome: RYAN
+Chat received from RYAN - broadcasting
+broadcasting: Chat Message from RYAN: WOOOOOOOOOOOOOOOOOO
+Server (re)started at: Mon Oct 18 15:45:05 UTC 2021
+Exception in thread "main" java.net.BindException: Address already in use (Bind failed)
+	at java.base/java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:436)
+	at java.base/java.net.ServerSocket.bind(ServerSocket.java:395)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:257)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:149)
+	at ChatServer.main(ChatServer.java:20)
+Server crashed at: Mon Oct 18 15:45:05 UTC 2021
+Server (re)started at: Mon Oct 18 15:45:15 UTC 2021
+Exception in thread "main" java.net.BindException: Address already in use (Bind failed)
+	at java.base/java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:436)
+	at java.base/java.net.ServerSocket.bind(ServerSocket.java:395)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:257)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:149)
+	at ChatServer.main(ChatServer.java:20)
+Server crashed at: Mon Oct 18 15:45:15 UTC 2021
+Server (re)started at: Mon Oct 18 15:45:25 UTC 2021
+Exception in thread "main" java.net.BindException: Address already in use (Bind failed)
+	at java.base/java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:436)
+	at java.base/java.net.ServerSocket.bind(ServerSocket.java:395)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:257)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:149)
+	at ChatServer.main(ChatServer.java:20)
+Server crashed at: Mon Oct 18 15:45:25 UTC 2021
+Server (re)started at: Mon Oct 18 15:45:35 UTC 2021
+Exception in thread "main" java.net.BindException: Address already in use (Bind failed)
+	at java.base/java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:436)
+	at java.base/java.net.ServerSocket.bind(ServerSocket.java:395)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:257)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:149)
+	at ChatServer.main(ChatServer.java:20)
+Server crashed at: Mon Oct 18 15:45:35 UTC 2021
+Server (re)started at: Mon Oct 18 15:45:45 UTC 2021
+Exception in thread "main" java.net.BindException: Address already in use (Bind failed)
+	at java.base/java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:436)
+	at java.base/java.net.ServerSocket.bind(ServerSocket.java:395)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:257)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:149)
+	at ChatServer.main(ChatServer.java:20)
+Server crashed at: Mon Oct 18 15:45:46 UTC 2021
+Chat received from RYAN - broadcasting
+broadcasting: Chat Message from RYAN: sadasd
+Server (re)started at: Mon Oct 18 15:45:56 UTC 2021
+Exception in thread "main" java.net.BindException: Address already in use (Bind failed)
+	at java.base/java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:436)
+	at java.base/java.net.ServerSocket.bind(ServerSocket.java:395)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:257)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:149)
+	at ChatServer.main(ChatServer.java:20)
+Server crashed at: Mon Oct 18 15:45:56 UTC 2021
+Server (re)started at: Mon Oct 18 15:46:06 UTC 2021
+Exception in thread "main" java.net.BindException: Address already in use (Bind failed)
+	at java.base/java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:436)
+	at java.base/java.net.ServerSocket.bind(ServerSocket.java:395)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:257)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:149)
+	at ChatServer.main(ChatServer.java:20)
+Server crashed at: Mon Oct 18 15:46:06 UTC 2021
+Caught socket ex for 168.229.254.25
+broadcasting: Exiting: RYAN
+Connected to /168.229.254.25:56497 on local port 54323
+added client 168.229.254.25
+broadcasting: Welcome: dave
+Connected to /168.229.254.25:53124 on local port 54323
+added client 168.229.254.25
+broadcasting: Welcome: mark
+Chat received from mark - broadcasting
+broadcasting: Chat Message from mark: no
+Chat received from mark - broadcasting
+broadcasting: Chat Message from mark: chat gfua
+Chat received from mark - broadcasting
+broadcasting: Chat Message from mark: 
+Chat received from mark - broadcasting
+broadcasting: Chat Message from mark: 
+Chat received from mark - broadcasting
+broadcasting: Chat Message from mark: 
+java.io.EOFException
+java.io.EOFException
+	at java.base/java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:3171)
+	at java.base/java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1630)
+	at java.base/java.io.ObjectInputStream.readObject(ObjectInputStream.java:493)
+	at java.base/java.io.ObjectInputStream.readObject(ObjectInputStream.java:451)
+	at ChatServerSocketListener.run(ChatServerSocketListener.java:66)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+broadcasting: Exiting: mark
+Caught socket ex for 168.229.254.25
+broadcasting: Exiting: dave
+Connected to /23.129.64.192:49749 on local port 54323
+java.io.EOFException
+java.io.EOFException
+	at java.base/java.io.ObjectInputStream$PeekInputStream.readFully(ObjectInputStream.java:2872)
+	at java.base/java.io.ObjectInputStream$BlockDataInputStream.readShort(ObjectInputStream.java:3367)
+	at java.base/java.io.ObjectInputStream.readStreamHeader(ObjectInputStream.java:936)
+	at java.base/java.io.ObjectInputStream.<init>(ObjectInputStream.java:379)
+	at ChatServerSocketListener.setup(ChatServerSocketListener.java:21)
+	at ChatServerSocketListener.run(ChatServerSocketListener.java:58)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Exception in thread "pool-1-thread-4" java.lang.NullPointerException
+	at ChatServerSocketListener.run(ChatServerSocketListener.java:90)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Server (re)started at: Tue Oct 19 18:41:23 UTC 2021
+Chat Server started.
+Local IP: 172.31.92.127
+Local Port: 54323
+Connected to /168.229.254.25:65243 on local port 54323
+added client 168.229.254.25
+broadcasting: Welcome: MARK
+Chat received from MARK - broadcasting
+broadcasting: Chat Message from MARK: mark
+Chat received from MARK - broadcasting
+broadcasting: Chat Message from MARK: mark
+Chat received from MARK - broadcasting
+broadcasting: Chat Message from MARK: mark
+Chat received from MARK - broadcasting
+broadcasting: Chat Message from MARK: mark
+Connected to /168.229.254.25:6287 on local port 54323
+added client 168.229.254.25
+broadcasting: Welcome: MARk
+Chat received from MARk - broadcasting
+broadcasting: Chat Message from MARk: MARk
+Chat received from MARK - broadcasting
+broadcasting: Chat Message from MARK: mark
+Chat received from MARk - broadcasting
+broadcasting: Chat Message from MARk: MARK
+Chat received from MARK - broadcasting
+broadcasting: Chat Message from MARK: mark
+Chat received from MARK - broadcasting
+broadcasting: Chat Message from MARK: mark
+Chat received from MARK - broadcasting
+broadcasting: Chat Message from MARK: mark
+Chat received from MARK - broadcasting
+broadcasting: Chat Message from MARK: mark
+Chat received from MARK - broadcasting
+broadcasting: Chat Message from MARK: mark
+Chat received from MARK - broadcasting
+broadcasting: Chat Message from MARK: mark
+Chat received from MARK - broadcasting
+broadcasting: Chat Message from MARK: mark
+Chat received from MARk - broadcasting
+broadcasting: Chat Message from MARk: 
+Chat received from MARk - broadcasting
+broadcasting: Chat Message from MARk: MARK
+Chat received from MARk - broadcasting
+broadcasting: Chat Message from MARk: MARK
+Connected to /168.229.254.25:57468 on local port 54323
+added client 168.229.254.25
+broadcasting: Welcome: hared
+Chat received from MARk - broadcasting
+broadcasting: Chat Message from MARk: 
+Chat received from MARk - broadcasting
+broadcasting: Chat Message from MARk: MARK
+Chat received from MARk - broadcasting
+broadcasting: Chat Message from MARk: MARK
+Chat received from MARK - broadcasting
+broadcasting: Chat Message from MARK: mark
+Chat received from MARk - broadcasting
+broadcasting: Chat Message from MARk: RK
+Chat received from MARK - broadcasting
+broadcasting: Chat Message from MARK: 
+Chat received from MARK - broadcasting
+broadcasting: Chat Message from MARK: mark
+Chat received from MARK - broadcasting
+broadcasting: Chat Message from MARK: mark
+Chat received from MARK - broadcasting
+broadcasting: Chat Message from MARK: mark
+Chat received from MARk - broadcasting
+broadcasting: Chat Message from MARk: RK
+Chat received from MARK - broadcasting
+broadcasting: Chat Message from MARK: mark
+Chat received from MARK - broadcasting
+broadcasting: Chat Message from MARK: mark
+Chat received from MARK - broadcasting
+broadcasting: Chat Message from MARK: mark
+Chat received from MARk - broadcasting
+broadcasting: Chat Message from MARk: 
+Chat received from MARK - broadcasting
+broadcasting: Chat Message from MARK: ark
+Chat received from MARK - broadcasting
+broadcasting: Chat Message from MARK: mark
+Chat received from MARk - broadcasting
+broadcasting: Chat Message from MARk: ARK
+Chat received from MARK - broadcasting
+broadcasting: Chat Message from MARK: mark
+Chat received from MARk - broadcasting
+broadcasting: Chat Message from MARk: AMRK
+Chat received from MARK - broadcasting
+broadcasting: Chat Message from MARK: mark
+Chat received from MARk - broadcasting
+broadcasting: Chat Message from MARk: RL
+Chat received from MARK - broadcasting
+broadcasting: Chat Message from MARK: 
+Chat received from MARK - broadcasting
+broadcasting: Chat Message from MARK: mark
+Chat received from MARK - broadcasting
+broadcasting: Chat Message from MARK: mark
+Chat received from MARK - broadcasting
+broadcasting: Chat Message from MARK: mkark
+Chat received from hared - broadcasting
+broadcasting: Chat Message from hared: I likeii like dilfs
+Chat received from MARK - broadcasting
+broadcasting: Chat Message from MARK: https://pornhub.com/
+Chat received from MARK - broadcasting
+broadcasting: Chat Message from MARK: https://pornhub.com/
+Chat received from MARK - broadcasting
+broadcasting: Chat Message from MARK: https://pornhub.com/
+Chat received from MARK - broadcasting
+broadcasting: Chat Message from MARK: https://pornhub.com/
+Chat received from MARK - broadcasting
+broadcasting: Chat Message from MARK: https://pornhub.com/
+Chat received from MARK - broadcasting
+broadcasting: Chat Message from MARK: https://pornhub.com/
+Chat received from MARK - broadcasting
+broadcasting: Chat Message from MARK: https://pornhub.com/
+Chat received from MARK - broadcasting
+broadcasting: Chat Message from MARK: https://pornhub.com/
+Chat received from MARK - broadcasting
+broadcasting: Chat Message from MARK: https://pornhub.com/
+Chat received from MARK - broadcasting
+broadcasting: Chat Message from MARK: https://pornhub.com/https://pornhub.com/
+Chat received from MARK - broadcasting
+broadcasting: Chat Message from MARK: https://pornhub.com/
+java.io.EOFException
+java.io.EOFException
+	at java.base/java.io.ObjectInputStream$BlockDataInputStream.peekByte(ObjectInputStream.java:3171)
+	at java.base/java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1630)
+	at java.base/java.io.ObjectInputStream.readObject(ObjectInputStream.java:493)
+	at java.base/java.io.ObjectInputStream.readObject(ObjectInputStream.java:451)
+	at ChatServerSocketListener.run(ChatServerSocketListener.java:66)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+broadcasting: Exiting: hared
+Chat received from MARk - broadcasting
+broadcasting: Chat Message from MARk: ARK
+Chat received from MARk - broadcasting
+broadcasting: Chat Message from MARk: 
+Chat received from MARk - broadcasting
+broadcasting: Chat Message from MARk: MARK\
+broadcasting: Exiting: MARk
+Caught socket ex for 168.229.254.25
+broadcasting: Exiting: MARK
