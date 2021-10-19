@@ -15,7 +15,7 @@ public class ChatClient {
         socketOut = new ObjectOutputStream(socket.getOutputStream());
         socketIn = new ObjectInputStream(socket.getInputStream());
     }
-
+ 
     // start a thread to listen for messages from the server
     private void startListener() {
         new Thread(new ChatClientSocketListener(socketIn, blocked)).start();
