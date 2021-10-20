@@ -715,3 +715,23 @@ Exception in thread "main" java.net.BindException: Address already in use (Bind 
 	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:149)
 	at ChatServer.main(ChatServer.java:20)
 Server crashed at: Tue Oct 19 19:21:25 UTC 2021
+Server (re)started at: Wed Oct 20 03:30:41 UTC 2021
+Chat Server started.
+Local IP: 172.31.92.127
+Local Port: 54323
+Connected to /24.228.142.29:63525 on local port 54323
+added client ool-18e48e1d.dyn.optonline.net
+broadcasting: Welcome: david
+Connected to /127.0.0.1:40478 on local port 54323
+added client localhost
+broadcasting: Welcome: david_2
+Chat received from david_2 - broadcasting
+broadcasting: Chat Message from david_2: test
+Chat received from david_2 - broadcasting
+broadcasting: Chat Message from david_2: fhwuf
+Chat received from david_2 - broadcasting
+broadcasting: Chat Message from david_2: vnwoiv
+Chat received from david_2 - broadcasting
+broadcasting: Chat Message from david_2: vwgw
+broadcasting: Exiting: david_2
+broadcasting: Exiting: david
