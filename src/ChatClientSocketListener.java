@@ -34,8 +34,6 @@ public class ChatClientSocketListener implements Runnable {
                 else if (msg instanceof MessageStoC_Chat) {
                     if (!blocked.contains(((MessageStoC_Chat) msg).userName))
                         processChatMessage((MessageStoC_Chat) msg);
-                    else
-                        processChatMessage(new MessageStoC_Chat("SERVER", "Message from blocked user " + ((MessageStoC_Chat) msg).userName));
                 }
                 else if (msg instanceof MessageStoC_Exit) {
                     processExitMessage((MessageStoC_Exit) msg);
