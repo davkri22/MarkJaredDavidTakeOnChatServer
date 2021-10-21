@@ -4,22 +4,41 @@ import java.util.ArrayList;
 public class ChatClientSocketListener implements Runnable {
     private ObjectInputStream socketIn;
     private ArrayList<String> blocked;
+    public boolean jaredMode = false;
+
 
     public ChatClientSocketListener(ObjectInputStream socketIn, ArrayList<String> blocked) {
         this.socketIn = socketIn;
         this.blocked = blocked;
     }
 
+    public void setJaredMode(){
+        jaredMode = !jaredMode;
+    }
+
     private void processChatMessage(MessageStoC_Chat m) {
-        System.out.println(m.userName + ": " + m.msg);
+        if (!jaredMode) {
+            System.out.println(m.userName + ": " + m.msg);
+        }
+        else {
+            System.out.println("Jared: " + m.msg);
+        }
+
     }
 
     private void processWelcomeMessage(MessageStoC_Welcome m) {
-        System.out.println(m.userName + " joined the server!");
+        if(!jaredMode) {
+            System.out.println(m.userName + " joined the server!");
+        } else
+        System.out.println("Bossman joined the server!");
     }
 
+
     private void processExitMessage(MessageStoC_Exit m) {
-        System.out.println(m.userName + " left the server!");
+        if(!jaredMode) {
+            System.out.println(m.userName + " left the server!");
+        } else
+        System.out.println("Bossman left the server!");
     }
 
     @Override

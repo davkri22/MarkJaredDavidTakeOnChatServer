@@ -9,6 +9,8 @@ public class ChatClient {
     private ObjectOutputStream socketOut;
     private ObjectInputStream socketIn;
     private ArrayList<String> blocked = new ArrayList<>();
+    private boolean jared;
+    public ChatClientSocketListener chat = null;
 
     public ChatClient(String ip, int port) throws Exception {
         socket = new Socket(ip, port);
@@ -18,7 +20,8 @@ public class ChatClient {
  
     // start a thread to listen for messages from the server
     private void startListener() {
-        new Thread(new ChatClientSocketListener(socketIn, blocked)).start();
+        chat = new ChatClientSocketListener(socketIn, blocked);
+        new Thread(chat).start();
     }
 
     private void sendMessage(Message m) throws Exception {
@@ -34,7 +37,13 @@ public class ChatClient {
 
         String line = in.nextLine().trim();
         while (!line.toLowerCase().startsWith("/quit")) {
-            if (line.startsWith("/block ")){
+            if (line.toLowerCase().startsWith("/jared "))
+            {
+                chat.setJaredMode();
+                line = in.next().trim();
+                continue;
+            }
+            if (line.toLowerCase().startsWith("/block ")){
                 blocked.add(line.substring(7));
                 System.out.println("User "+ line.substring(7) + " blocked");
                 line = in.nextLine().trim();
