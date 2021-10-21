@@ -1,10 +1,13 @@
 import java.io.ObjectInputStream;
+import java.util.ArrayList;
 
 public class ChatClientSocketListener implements Runnable {
     private ObjectInputStream socketIn;
+    private ArrayList<String> blocked;
 
-    public ChatClientSocketListener(ObjectInputStream socketIn) {
+    public ChatClientSocketListener(ObjectInputStream socketIn, ArrayList<String> blocked) {
         this.socketIn = socketIn;
+        this.blocked = blocked;
     }
 
     private void processChatMessage(MessageStoC_Chat m) {
@@ -29,7 +32,8 @@ public class ChatClientSocketListener implements Runnable {
                     processWelcomeMessage((MessageStoC_Welcome) msg);
                 }
                 else if (msg instanceof MessageStoC_Chat) {
-                    processChatMessage((MessageStoC_Chat) msg);
+                    if (!blocked.contains(((MessageStoC_Chat) msg).userName))
+                        processChatMessage((MessageStoC_Chat) msg);
                 }
                 else if (msg instanceof MessageStoC_Exit) {
                     processExitMessage((MessageStoC_Exit) msg);
