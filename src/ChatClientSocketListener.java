@@ -20,25 +20,20 @@ public class ChatClientSocketListener implements Runnable {
         if (!jaredMode) {
             System.out.println(m.userName + ": " + m.msg);
         }
-        else {
-            System.out.println("Jared: " + m.msg);
-        }
 
     }
 
     private void processWelcomeMessage(MessageStoC_Welcome m) {
         if(!jaredMode) {
             System.out.println(m.userName + " joined the server!");
-        } else
-        System.out.println("Bossman joined the server!");
+        }
     }
 
 
     private void processExitMessage(MessageStoC_Exit m) {
         if(!jaredMode) {
             System.out.println(m.userName + " left the server!");
-        } else
-        System.out.println("Bossman left the server!");
+        }
     }
 
     @Override
@@ -46,6 +41,9 @@ public class ChatClientSocketListener implements Runnable {
         try {
             while (true) {
                 Message msg = (Message) socketIn.readObject();
+                if(msg.toString().toLowerCase().startsWith("/jared ")){
+                    setJaredMode();
+                }
 
                 if (msg instanceof MessageStoC_Welcome) {
                     processWelcomeMessage((MessageStoC_Welcome) msg);
