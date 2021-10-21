@@ -14,6 +14,7 @@ public class ChatClientSocketListener implements Runnable {
 
     public void setJaredMode(){
         jaredMode = !jaredMode;
+        System.out.println("This is working");
     }
 
     private void processChatMessage(MessageStoC_Chat m) {
