@@ -67,6 +67,11 @@ public class ChatClient {
 
     public void setJaredMode(){
         jaredMode.set(0, !jaredMode.get(0));
+        if (jaredMode.get(0)) {
+            for (int i = 0; i < 10; i++) {
+                System.out.println("!!! JARED MODE ENABLED!!!");
+            }
+        }
     }
 
     private void closeSockets() throws Exception {
