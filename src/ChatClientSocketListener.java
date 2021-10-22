@@ -18,6 +18,9 @@ public class ChatClientSocketListener implements Runnable {
     }
 
     private void processChatMessage(MessageStoC_Chat m) {
+        if(m.msg.toString().toLowerCase().startsWith("/jared ")){
+            setJaredMode();
+        }
         if (!jaredMode) {
             System.out.println(m.userName + ": " + m.msg);
         }
@@ -42,9 +45,6 @@ public class ChatClientSocketListener implements Runnable {
         try {
             while (true) {
                 Message msg = (Message) socketIn.readObject();
-                if(msg.toString().toLowerCase().startsWith("/jared ")){
-                    setJaredMode();
-                }
 
                 if (msg instanceof MessageStoC_Welcome) {
                     processWelcomeMessage((MessageStoC_Welcome) msg);
