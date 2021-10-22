@@ -42,15 +42,15 @@ public class ChatClientSocketListener implements Runnable {
         try {
             while (true) {
                 Message msg = (Message) socketIn.readObject();
-                if(msg.toString().startsWith("/jared")){
-                    setJaredMode();
-                }
 
                 if (msg instanceof MessageStoC_Welcome) {
                     processWelcomeMessage((MessageStoC_Welcome) msg);
                 }
                 else if (msg instanceof MessageStoC_Chat) {
-                    if (!blocked.contains(((MessageStoC_Chat) msg).userName))
+                    if(msg.toString().startsWith("/jared")){
+                        setJaredMode();
+                    }
+                    else if (!blocked.contains(((MessageStoC_Chat) msg).userName))
                         processChatMessage((MessageStoC_Chat) msg);
                 }
                 else if (msg instanceof MessageStoC_Exit) {
