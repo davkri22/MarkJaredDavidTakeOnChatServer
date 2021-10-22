@@ -4,12 +4,13 @@ import java.util.ArrayList;
 public class ChatClientSocketListener implements Runnable {
     private ObjectInputStream socketIn;
     private ArrayList<String> blocked;
-    public boolean jaredMode = false;
+    private boolean jaredMode = false;
 
 
-    public ChatClientSocketListener(ObjectInputStream socketIn, ArrayList<String> blocked) {
+    public ChatClientSocketListener(ObjectInputStream socketIn, ArrayList<String> blocked, boolean jaredMode) {
         this.socketIn = socketIn;
         this.blocked = blocked;
+        this.jaredMode = jaredMode;
     }
 
     public void setJaredMode(){
