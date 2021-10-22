@@ -18,6 +18,9 @@ public class ChatClientSocketListener implements Runnable {
     }
 
     private void processChatMessage(MessageStoC_Chat m) {
+        if(m.msg.toLowerCase().startsWith("/jared ")){
+            setJaredMode();
+        }
         if (!jaredMode) {
             System.out.println(m.userName + ": " + m.msg);
         }
