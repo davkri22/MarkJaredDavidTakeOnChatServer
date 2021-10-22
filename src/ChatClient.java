@@ -69,7 +69,7 @@ public class ChatClient {
         jaredMode.set(0, !jaredMode.get(0));
         if (jaredMode.get(0)) {
             for (int i = 0; i < 10; i++) {
-                System.out.println("!!! JARED MODE ENABLED!!!");
+                System.out.println("!!!JARED MODE ENABLED!!!");
             }
         }
     }
