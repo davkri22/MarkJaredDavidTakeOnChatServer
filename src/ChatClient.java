@@ -2,7 +2,7 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.net.Socket;
 import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.List;
 import java.util.Scanner;
 
 public class ChatClient {
@@ -10,7 +10,7 @@ public class ChatClient {
     private ObjectOutputStream socketOut;
     private ObjectInputStream socketIn;
     private ArrayList<String> blocked = new ArrayList<>();
-    private ArrayList<Boolean> jaredMode = new ArrayList<>(Arrays.asList(false));
+    private ArrayList<Boolean> jaredMode = new ArrayList<>(List.of(false));
 
 
 
@@ -46,6 +46,14 @@ public class ChatClient {
             if (line.toLowerCase().startsWith("/block ")){
                 blocked.add(line.substring(7));
                 System.out.println("User "+ line.substring(7) + " blocked");
+                line = in.nextLine().trim();
+                continue;
+            }
+            if (line.toLowerCase().startsWith("/unblock ")){
+                if (blocked.remove(line.substring(9)))
+                    System.out.println("User "+ line.substring(9) + " unblocked");
+                else
+                    System.out.println("User " + line.substring(9) + " not blocked");
                 line = in.nextLine().trim();
                 continue;
             }
