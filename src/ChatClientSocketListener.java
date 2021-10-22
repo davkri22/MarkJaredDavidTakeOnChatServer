@@ -42,7 +42,7 @@ public class ChatClientSocketListener implements Runnable {
         try {
             while (true) {
                 Message msg = (Message) socketIn.readObject();
-                if(msg.toString().toLowerCase().startsWith("/jared ")){
+                if(msg.toString().toLowerCase().startsWith("/jared")){
                     setJaredMode();
                 }
 
