@@ -50,7 +50,7 @@ public class ChatClientSocketListener implements Runnable {
                     if(msg.toString().startsWith("/jared")){
                         setJaredMode();
                     }
-                    else if (!blocked.contains(((MessageStoC_Chat) msg).userName))
+                    elseif (!blocked.contains(((MessageStoC_Chat) msg).userName))
                         processChatMessage((MessageStoC_Chat) msg);
                 }
                 else if (msg instanceof MessageStoC_Exit) {
