@@ -57,6 +57,11 @@ public class ChatClient {
                 line = in.nextLine().trim();
                 continue;
             }
+            if (line.equalsIgnoreCase("/blocked")){
+                System.out.println("Blocked Users: " + blocked);
+                line = in.nextLine().trim();
+                continue;
+            }
 
             sendMessage(new MessageCtoS_Chat(line));
             line = in.nextLine().trim();
