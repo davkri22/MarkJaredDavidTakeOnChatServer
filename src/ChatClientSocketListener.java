@@ -14,7 +14,6 @@ public class ChatClientSocketListener implements Runnable {
 
     public void setJaredMode(){
         jaredMode = !jaredMode;
-        System.out.println("This is working");
     }
 
     private void processChatMessage(MessageStoC_Chat m) {
@@ -24,6 +23,9 @@ public class ChatClientSocketListener implements Runnable {
         if (!jaredMode) {
             System.out.println(m.userName + ": " + m.msg);
         }
+        else{
+            System.out.println("Jared: " + m.msg);
+        }
 
     }
 
@@ -31,12 +33,18 @@ public class ChatClientSocketListener implements Runnable {
         if(!jaredMode) {
             System.out.println(m.userName + " joined the server!");
         }
+        else{
+            System.out.println("Bossman joined the server!");
+        }
     }
 
 
     private void processExitMessage(MessageStoC_Exit m) {
         if(!jaredMode) {
             System.out.println(m.userName + " left the server!");
+        }
+        else{
+            System.out.println("Bossman left the server!");
         }
     }
 
