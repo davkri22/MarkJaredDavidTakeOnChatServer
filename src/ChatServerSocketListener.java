@@ -28,11 +28,6 @@ public class ChatServerSocketListener  implements Runnable {
 
     }
 
-    private void processCommand(MessageCtoS_Command c){
-        System.out.println("Command received from " + client.getUserName() + " - broadcasting");
-        broadcast(new MessageStoC_Command(c.command), client);
-    }
-
     private void processChatMessage(MessageCtoS_Chat m) {
         System.out.println("Chat received from " + client.getUserName() + " - broadcasting");
         broadcast(new MessageStoC_Chat(client.getUserName(), m.msg), client);
@@ -71,9 +66,6 @@ public class ChatServerSocketListener  implements Runnable {
                 Message msg = (Message) in.readObject();
                 if (msg instanceof MessageCtoS_Quit) {
                     break;
-                }
-                else if (msg instanceof MessageCtoS_Command){
-                    processCommand((MessageCtoS_Command) msg);
                 }
                 else if (msg instanceof MessageCtoS_Chat) {
                     processChatMessage((MessageCtoS_Chat) msg);

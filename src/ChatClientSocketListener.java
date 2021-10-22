@@ -1,45 +1,26 @@
 import java.io.ObjectInputStream;
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class ChatClientSocketListener implements Runnable {
-    private final ArrayList<String> COMMANDS = new ArrayList<>(Arrays.asList("block", "unblock", "jared"));
     private ObjectInputStream socketIn;
-    private ArrayList<String> blocked = new ArrayList<>();
+    private ArrayList<String> blocked;
     private boolean jaredMode = false;
 
 
-    public ChatClientSocketListener(ObjectInputStream socketIn) {
+    public ChatClientSocketListener(ObjectInputStream socketIn, ArrayList<String> blocked, boolean jaredMode) {
         this.socketIn = socketIn;
-
+        this.blocked = blocked;
+        this.jaredMode = jaredMode;
     }
 
-    private  void setJaredMode(){
+    public void setJaredMode(){
         jaredMode = !jaredMode;
     }
 
-    private void processCommand(MessageStoC_Command c) {
-        if (!COMMANDS.contains(c.command))
-            System.out.println("Command not recognized");
-        else{
-            switch (c.command){
-                case "block":
-                    blocked.add(c.params[1]);
-                    System.out.println("User " + c.params[1] + " blocked");
-                    break;
-                case "unblock":
-                    blocked.remove(c.params[1]);
-                    System.out.println("User " + c.params[1] + " unblocked");
-                    break;
-                case "jared":
-                    setJaredMode();
-                    break;
-            }
-        }
-
-    }
-
     private void processChatMessage(MessageStoC_Chat m) {
+        if(m.msg.toLowerCase().startsWith("/jared ")){
+            setJaredMode();
+        }
         if (!jaredMode) {
             System.out.println(m.userName + ": " + m.msg);
         }
@@ -76,9 +57,6 @@ public class ChatClientSocketListener implements Runnable {
 
                 if (msg instanceof MessageStoC_Welcome) {
                     processWelcomeMessage((MessageStoC_Welcome) msg);
-                }
-                else if (msg instanceof MessageStoC_Command){
-                    processCommand((MessageStoC_Command) msg);
                 }
                 else if (msg instanceof MessageStoC_Chat) {
                     if (!blocked.contains(((MessageStoC_Chat) msg).userName))
