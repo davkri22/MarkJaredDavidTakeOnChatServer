@@ -20,6 +20,9 @@ public class ChatClientSocketListener implements Runnable {
     }
 
     private void processChatMessage(MessageStoC_Chat m) {
+        if(isBold.get(0)){
+            System.out.print(BLACK_BOLD_BRIGHT);
+        }
         if (!jaredMode.get(0)) {
             System.out.println(m.userName + ": " + m.msg);
         }
@@ -52,9 +55,6 @@ public class ChatClientSocketListener implements Runnable {
     public void run() {
         try {
             while (true) {
-                if(isBold.get(0)){
-                    System.out.print(BLACK_BOLD_BRIGHT);
-                }
                 Message msg = (Message) socketIn.readObject();
                 if (msg instanceof MessageStoC_Welcome) {
                     processWelcomeMessage((MessageStoC_Welcome) msg);
