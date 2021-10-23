@@ -46,8 +46,6 @@ public class ChatClient {
                 continue;
             }
 
-
-
             if (line.equalsIgnoreCase("/bold")){
                 isBold.set(0, !isBold.get(0));
                 line = in.nextLine().trim();
