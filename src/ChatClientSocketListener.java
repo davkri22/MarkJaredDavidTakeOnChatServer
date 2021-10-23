@@ -6,22 +6,30 @@ public class ChatClientSocketListener implements Runnable {
     private ObjectInputStream socketIn;
     private ArrayList<String> blocked;
     private ArrayList<Boolean> jaredMode;
+    private ArrayList<Boolean> isBold;
+    public static final String BLACK_BOLD_BRIGHT = "\033[1;90m";
+    public static final String RESET = "\033[0m";
 
 
-    public ChatClientSocketListener(ObjectInputStream socketIn, ArrayList<String> blocked, ArrayList<Boolean> jaredMode) {
+
+    public ChatClientSocketListener(ObjectInputStream socketIn, ArrayList<String> blocked, ArrayList<Boolean> jaredMode, ArrayList<Boolean> isBold) {
         this.socketIn = socketIn;
         this.blocked = blocked;
         this.jaredMode = jaredMode;
+        this.isBold = isBold;
     }
 
     private void processChatMessage(MessageStoC_Chat m) {
+        if(isBold.get(0)){
+            System.out.print(BLACK_BOLD_BRIGHT);
+        }
         if (!jaredMode.get(0)) {
             System.out.println(m.userName + ": " + m.msg);
         }
         else{
             System.out.println("Jared: " + m.msg);
         }
-
+        System.out.print(RESET);
     }
 
     private void processWelcomeMessage(MessageStoC_Welcome m) {

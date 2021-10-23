@@ -11,6 +11,7 @@ public class ChatClient {
     private ObjectInputStream socketIn;
     private ArrayList<String> blocked = new ArrayList<>();
     private ArrayList<Boolean> jaredMode = new ArrayList<>(List.of(false));
+    private ArrayList<Boolean> isBold = new ArrayList<>(List.of(false));
 
 
 
@@ -22,7 +23,7 @@ public class ChatClient {
 
     // start a thread to listen for messages from the server
     private void startListener() {
-        new Thread(new ChatClientSocketListener(socketIn, blocked, jaredMode)).start();
+        new Thread(new ChatClientSocketListener(socketIn, blocked, jaredMode, isBold)).start();
     }
 
     private void sendMessage(Message m) throws Exception {
@@ -38,11 +39,25 @@ public class ChatClient {
 
         String line = in.nextLine().trim();
         while (!line.toLowerCase().startsWith("/quit")) {
+
             if(line.equalsIgnoreCase("/jared")){
                 setJaredMode();
                 line = in.nextLine().trim();
                 continue;
             }
+
+            if (line.toLowerCase().equals("/bold")){
+                isBold.set(0, true);
+                line = in.nextLine().trim();
+                continue;
+            }
+
+            if (line.toLowerCase().equals("/unBold")){
+                isBold.set(0, false);
+                line = in.nextLine().trim();
+                continue;
+            }
+
             if (line.toLowerCase().startsWith("/block ")){
                 blocked.add(line.substring(7));
                 System.out.println("User "+ line.substring(7) + " blocked");
