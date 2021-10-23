@@ -7,8 +7,8 @@ public class ChatClientSocketListener implements Runnable {
     private ArrayList<String> blocked;
     private ArrayList<Boolean> jaredMode;
     private ArrayList<Boolean> isBold;
-    public static final String BLACK_BOLD_BRIGHT = "\033[1;90m";
-    public static final String RESET = "\033[0m";
+    public static final String ANSI_YELLOW = "\u001B[33m";
+    public static final String ANSI_RESET = "\u001B[0m";
 
 
 
@@ -21,15 +21,14 @@ public class ChatClientSocketListener implements Runnable {
 
     private void processChatMessage(MessageStoC_Chat m) {
         if(isBold.get(0)){
-            System.out.print(BLACK_BOLD_BRIGHT);
+            System.out.println(ANSI_YELLOW + "This text should be yellow" + ANSI_RESET);
         }
-        if (!jaredMode.get(0)) {
+        else if (!jaredMode.get(0)) {
             System.out.println(m.userName + ": " + m.msg);
         }
         else{
             System.out.println("Jared: " + m.msg);
         }
-        System.out.print(RESET);
     }
 
     private void processWelcomeMessage(MessageStoC_Welcome m) {
