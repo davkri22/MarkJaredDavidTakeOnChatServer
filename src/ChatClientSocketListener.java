@@ -7,8 +7,8 @@ public class ChatClientSocketListener implements Runnable {
     private ArrayList<String> blocked;
     private ArrayList<Boolean> jaredMode;
     private ArrayList<Boolean> isBold;
-    public static final String BLACK_BOLD_BRIGHT = "\033[1;90m";
-    public static final String RESET = "\033[0m";
+    public static final String BLACK_BOLD_BRIGHT = "\033[0;1m";
+    public static final String RESET = "\033[0;0m";
 
 
 

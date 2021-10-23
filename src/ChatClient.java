@@ -46,14 +46,8 @@ public class ChatClient {
                 continue;
             }
 
-            if (line.toLowerCase().equals("/bold")){
-                isBold.set(0, true);
-                line = in.nextLine().trim();
-                continue;
-            }
-
-            if (line.toLowerCase().equals("/unBold")){
-                isBold.set(0, false);
+            if (line.equalsIgnoreCase("/bold")){
+                isBold.set(0, !isBold.get(0));
                 line = in.nextLine().trim();
                 continue;
             }
